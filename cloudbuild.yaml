@@ -1,10 +1,11 @@
 steps:
 - name: node:18.15.0
-  - name: "gcr.io/cloud-builders/yarn"
+    entrypoint: yarn
+- name: "gcr.io/cloud-builders/yarn"
     args: ["add"]
-  - name: "gcr.io/cloud-builders/yarn"
+- name: "gcr.io/cloud-builders/yarn"
     args: ["build"]
-  - name: "gcr.io/cloud-builders/gcloud"
+- name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy"]
     timeout: "1600s" 
 options:
