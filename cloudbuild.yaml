@@ -30,11 +30,28 @@
 # images:
 #   - gcr.io/tutorlancer/github.com/username/project.com
 
-steps:
-- name: node:18.15.0
-  entrypoint: yarn
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
-options:
-  logging: CLOUD_LOGGING_ONLY
+# steps:
+# - name: node:18.15.0
+#   entrypoint: yarn
+# - name: "gcr.io/cloud-builders/gcloud"
+#   args: ["app", "deploy"]
+# timeout: "1600s"
+# options:
+#   logging: CLOUD_LOGGING_ONLY
+
+# Step 1: For installing dependencies
+  - name: "gcr.io/cloud-builders/yarn"
+    # dir: 'ui'
+    args: ["add"]
+
+# Step 2: For creating optinimized build
+  - name: "gcr.io/cloud-builders/yarn"
+    # dir: 'ui'
+    args: ["build"]
+
+# Step 3: This step will execute app.yaml in your ui folder and deploy your app based on the configuration specified
+  - name: "gcr.io/cloud-builders/gcloud"
+    # dir: 'ui'
+    args: ["app", "deploy"]
+# timeout specified for this step as deployment may take more that default time(10min)
+    timeout: "1600s" 
