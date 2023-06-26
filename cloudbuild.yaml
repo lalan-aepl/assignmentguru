@@ -1,12 +1,15 @@
 steps:
-- name: node:18.15.0
-    entrypoint: yarn
-- name: "gcr.io/cloud-builders/yarn"
-    args: ["add"]
-- name: "gcr.io/cloud-builders/yarn"
-    args: ["build"]
-- name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy"]
-    timeout: "1600s" 
-options:
-  logging: CLOUD_LOGGING_ONLY
+  # Install Node.js and dependencies
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['install']
+    dir: '.'
+
+  # Build the React.js application
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['build']
+    dir: '.'
+
+  # Deploy the application to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '--project=assignmentguru-390810', '--quiet']
+    dir: '.'
