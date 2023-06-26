@@ -1,54 +1,10 @@
-# steps:
-#   # Build the container image
-#   - name: "gcr.io/cloud-builders/docker"
-#     args:
-#       [
-#         "build",
-#         "-t",
-#         "gcr.io/tutorlancer/github.com/username/project.com:$COMMIT_SHA",
-#         ".",
-#       ]
-#   # Push the image to Container Registry
-#   - name: "gcr.io/cloud-builders/docker"
-#     args:
-#       [
-#         "push",
-#         "gcr.io/tutorlancer/github.com/username/project.com:$COMMIT_SHA",
-#       ]
-#   # Deploy image to Cloud Run
-#   - name: "gcr.io/cloud-builders/gcloud"
-#     args:
-#       - "run"
-#       - "deploy"
-#       - "assignmentguru"
-#       - "--image"
-#       - "gcr.io/tutorlancer/github.com/username/project.com:$COMMIT_SHA"
-#       - "--region"
-#       - "asia-east1"
-#       - "--platform"
-#       - "managed"
-# images:
-#   - gcr.io/tutorlancer/github.com/username/project.com
-
-# steps:
-# - name: node:18.15.0
-#   entrypoint: yarn
-# - name: "gcr.io/cloud-builders/gcloud"
-#   args: ["app", "deploy"]
-# timeout: "1600s"
-# options:
-#   logging: CLOUD_LOGGING_ONLY
 steps:
 - name: node:18.15.0
-  # entrypoint: yarn
   - name: "gcr.io/cloud-builders/yarn"
-    # dir: 'ui'
     args: ["add"]
   - name: "gcr.io/cloud-builders/yarn"
-    # dir: 'ui'
     args: ["build"]
   - name: "gcr.io/cloud-builders/gcloud"
-    # dir: 'ui'
     args: ["app", "deploy"]
     timeout: "1600s" 
 options:
