@@ -38,7 +38,8 @@
 # timeout: "1600s"
 # options:
 #   logging: CLOUD_LOGGING_ONLY
-
+- name: node:18.15.0
+  entrypoint: yarn
 # Step 1: For installing dependencies
   - name: "gcr.io/cloud-builders/yarn"
     # dir: 'ui'
