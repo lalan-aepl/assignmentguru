@@ -18,23 +18,24 @@ const Footer = () => {
                   with
                   <br /> students across the globe who seeks academic help.
                 </p>
-                <p className="flex flex-col gap-1 font-Nunito">
-                  {/* <span>
-                    <strong>Email</strong>: support@assignmentguru.com
-                  </span> */}
-                  <span>
-                    <strong>Phone</strong>: +91 8987909463
-                  </span>
-                </p>
+              
               </div>
               <div>
-                <span className="capitalize flex flex-col">
+                {/* <span className="capitalize flex flex-col">
                   <span className="leading-7">
                     <strong>address</strong>: c/o -s.k.mishra, c.m.r.i
                   </span>
                   <span>gate, bartand, dhanbad,</span>
-                  <span> jharkhand, india (826001)</span>
-                </span>
+                  <span> jharkhand, india (826001)</span> */}
+                    <p className="flex flex-col gap-1 font-Nunito">
+                  <span>
+                    <strong>Email</strong>: assignmentguru649@gmail.com
+                  </span>
+                  <span>
+                    <strong>Phone</strong>: +91 8987909463
+                  </span>
+                </p>
+                
               </div>
             </div>
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
