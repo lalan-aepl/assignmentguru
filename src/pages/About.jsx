@@ -93,7 +93,7 @@ const About = () => {
             </div>
             
             <a
-            href="https://wa.me/message/HIJF2T5A43BHO1" target="_blank"
+            href="https://wa.me/918987909463" target="_blank" rel="noreferrer"
             className="inline-block rounded-full cursor-pointer bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
           >
             Ask Questions 

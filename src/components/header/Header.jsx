@@ -38,7 +38,7 @@ function Header({ myRef }) {
         {/* logo */}
         <a href="#">
           <span className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">
-             <img width={100} src={logo} alt="logo"/>
+            <img width={100} src={logo} alt="logo" />
           </span>
         </a>
         {/* nav - initially hidden - show on desktop mode */}
@@ -46,11 +46,12 @@ function Header({ myRef }) {
           <Nav ref={myRef} />
         </div>
         <div className="hidden sm:block">
-          
           <a
             // onClick={()=>handleScroll('contact')}
-            href="https://wa.me/message/HIJF2T5A43BHO1" target="_blank"
+            href="https://wa.me/918987909463"
+            target="_blank"
             className="inline-block cursor-pointer rounded-full bg-gradient-to-r bg-blue-main px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
+            rel="noreferrer"
           >
             Chat With Us
           </a>
