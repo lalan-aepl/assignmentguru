@@ -32,7 +32,10 @@ const Footer = () => {
                   <span> jharkhand, india (826001)</span> */}
                 <p className="flex flex-col gap-1 font-Nunito">
                   <span>
-                    <strong>Email</strong>: assignmentguru649@gmail.com
+                    <strong>Email</strong>:{" "}
+                    <a href="mailto:support@assignment-guru.com">
+                      support@assignment-guru.com
+                    </a>
                   </span>
                   <span>
                     <strong>Phone</strong>: +91 8987909463
@@ -42,7 +45,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <p className="mb-10 sm:mb-0">
-                © 2022 Assignmentguru.com. All rights reserved Abhay Education
+                © 2022 assignmentguru.com. All rights reserved Abhay Education
                 Pvt. Ltd.
               </p>
               <ul className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
