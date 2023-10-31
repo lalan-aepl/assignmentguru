@@ -36,7 +36,7 @@ function Header({ myRef }) {
     >
       <div className="mx-auto max-w-screen-2xl lg:max-w-screen-xl px-4 pt-3 sm:px-6 flex justify-between items-center">
         {/* logo */}
-        <a href="#">
+        <a href="/">
           <span className="font-Inter font-bold tracking-[10px] text-2xl uppercase sm:text-[30px]">
             <img width={100} src={logo} alt="logo" />
           </span>

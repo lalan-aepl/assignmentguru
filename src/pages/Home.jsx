@@ -7,7 +7,7 @@ import ChooseUs from "./ChooseUs"
 import Contact from "./Contact"
 import Download from "./Download"
 import Features from "./Features"
-import Header from "../components/header/Header"
+// import Header from "../components/header/Header"
  
 import Schedule from "./Schedule"
 import Sessions from "./Sessions"
@@ -27,7 +27,7 @@ const Home = () => {
         <IoLogoWhatsapp className="inline-flex p-2" size={45} color="white" />
       </a>
 
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Banner />
       <ChooseUs />

@@ -11,19 +11,16 @@ import Footer from "./pages/Footer";
 const App = () => {
   return (
     <>
-      <Cookies/>
-     
+      <Cookies />
+      <Header />
       <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/refund" element={<Refund />} />
-      <Route path="/privacy" element={<PrivatePolocies />} />
-      <Route path="/termsandcondition" element={<Terms />} />
-      <Route path="*" element={<Home />} />
-     
-
+        <Route path="/" element={<Home />} />
+        <Route path="/refund" element={<Refund />} />
+        <Route path="/privacy" element={<PrivatePolocies />} />
+        <Route path="/termsandcondition" element={<Terms />} />
+        <Route path="*" element={<Home />} />
       </Routes>
-      <Footer/>
-      
+      <Footer />
     </>
   );
 };

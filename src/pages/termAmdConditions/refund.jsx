@@ -1,13 +1,13 @@
 const Refund = () => {
   return (
-    <div className="p-4 text-black  max-w-screen-2xl mx-auto pt-16">
+    <div className="p-4  max-w-screen-2xl mx-auto pt-28">
       <a
-        className="inline-block cursor-pointer rounded-full bg-gradient-to-r from-pink-darkPink to-blue-light px-8 py-4 text-sm font-medium text-black transition hover:bg-indigo-700 capitalize"
         href="/"
+        className="inline-block cursor-pointer rounded-full bg-gradient-to-r from-[#FF7714] to-[#FFCF59]  px-8 py-4 text-sm font-medium text-white transition hover:bg-indigo-700 capitalize"
       >
-        Back to Home
+        Back To Home
       </a>
-      <div style={{ maxWidth: "1400px", margin: "auto" , marginTop:"5rem"}}>
+      <div style={{ maxWidth: "1400px", margin: "auto" , marginTop:"2.5rem"}}>
         <h3 style={{ color: "black", fontSize: "22px", fontWeight: "bold" }}>
           Refund policy for Client
         </h3>
