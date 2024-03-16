@@ -1,0 +1,124 @@
+/* PortableTextStyles.css */
+/* Style the image */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Style the callToAction component */
+.callToAction {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Style the link mark */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-width: 3px;
+  border-style: dashed solid solid dotted;
+  border-color: #ff3d00 #ff3d00 transparent #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #ff3d00;
+  transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.para h3,
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 12px 0;
+}
+
+.para h2,
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 12px 0;
+}
+
+blockquote {
+  margin: 20px 0;
+  border-left: 3px solid #dbdbdb;
+  padding-left: 15px;
+}
+
+/* p{
+  margin: 15px 0;
+} */
+
+.blockcontent-style div ul {
+  list-style-type: disc;
+  margin: 20px;
+  display: grid;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .para h1 {
+    color: rgb(54, 44, 47);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 12px 0;
+    letter-spacing: 0.5px;
+  }
+
+  .para p {
+    font-size: 16px;
+    line-height: 1.7rem;
+  }
+}
+
+@media (max-width: 766px) {
+  .para h1 {
+    color: rgb(49, 40, 43);
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 12px 0;
+  }
+
+  .para p {
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+}
