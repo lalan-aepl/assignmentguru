@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BlockContent from "@sanity/block-content-to-react";
@@ -136,7 +137,7 @@ const Page = () => {
       {/* <Metadata>
         <title>{metadata.title}</title>
       </Metadata> */}
-      <div className="full-page flex flex-col lg:flex-row gap-4 px-8 max-w-screen-xl justify-center mx-auto">
+      <div className="mt-28 full-page flex flex-col lg:flex-row gap-4 px-8 max-w-screen-xl justify-center mx-auto">
         <div className="flex flex-col lg:col-span-3">
           {loading ? (
             <div className="flex justify-center h-screen">
