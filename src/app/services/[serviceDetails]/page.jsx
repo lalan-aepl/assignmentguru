@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import Page from "../pageCopy";
+import PageCopy from "../pageCopy";
 import { options } from "../../../data/nav";
 
 // export const generateMetadata = ({ params }) => {
@@ -12,7 +13,7 @@ import { options } from "../../../data/nav";
 function Page() {
   return (
     <>
-      <Page/>
+      <PageCopy/>
     </>
   );
 }

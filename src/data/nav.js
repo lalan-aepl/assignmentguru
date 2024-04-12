@@ -27,11 +27,11 @@ export const options = [
     name: "Homework Help",
     href: "homework",
     label: "homework",
-    bannerTitle: "BEST WEBSITES TO HELP WITH HOMEWORK",
+    bannerTitle: "Homework Help Online",
     bannerDesc:
       "Do you have lot's of Homework? Don't worry, Our expert are ready to help you right now.",
     aboutTitle:
-      "Website To Pay Someone To Do My Homework",
+      "Discover Your Homework Helper Free: The Ultimate Website to Pay Someone to Do My Homework and Unlock Academic Success.",
     aboutImage: homework,
     serviceAboutSectionPara: [
       "The Assignment Gurus Provide Pay Only For Homework Service. You can take the help of our professionals to do your homework. Discover the world of Assignment Gurus Homework – your go-to destination for unparalleled Homework assistance. Academic pursuits don't always unfold as anticipated, and planning your career path might seem secure, but aligning your academic journey with aspirations poses a significant challenge.",
@@ -47,6 +47,10 @@ export const options = [
       "This dedication has earned us a global reputation as the premier academic assistance provider, solidifying our position in the EdTech industry. Explore why this Homework section is indispensable on your journey to academic success with Assignment Gurus Homework.",
     ],
     howWorksTitle: "How To Hire Someone To Do Your Homework",
+    additionalContentTitle:"Homework Help Saudi Arabia",
+    additionalContent:['Students. Our comprehensive homework help services in Saudi Arabia are designed to enhance your learning experience and boost your academic performance. With personalized guidance and tailored support, our expert team ensures that you excel in your studies and achieve your educational goals. Trust "Homework Help Saudi Arabia" for reliable assistance that maximizes your learning outcomes and propels you towards academic success in Saudi Arabia.']
+
+
   },
   // assignment-help
   {
@@ -86,10 +90,11 @@ export const options = [
     name: "Project Help",
     href: "project-help",
     label: "project help",
+    bannerTitle:"Report Writing Help",
     bannerDesc:
-      "Revolutionize your career with online homework \n help available today!",
+      "Revolutionize your career with online homework help available today, including expert report writing helpers to propel your success to new heights!",
     aboutTitle:
-      "Crafting Excellence: Assignment Gurus Ensures Precision and Quality in Project Report Writing Services",
+      "Crafting Excellence: Assignment Gurus Ensures Precision and Quality in Project Report Writing Services for Optimal Academic and Professional Success",
     aboutImage: projectReport,
     serviceAboutSectionPara: [
       "Welcome to Assignment Gurus Project Report Writing – your ultimate destination for top-tier Project Report Writing services. Academic pursuits don't always unfold as anticipated, and planning your career path might seem secure, but aligning your academic journey with aspirations poses a significant challenge.",
@@ -103,6 +108,11 @@ export const options = [
       "Assignment Gurus takes an active initiative to provide Project Report Writing services, bringing you closer to achieving academic excellence. Our dedicated team of specialists ensures you're never left alone in challenging situations. Whether you declare 'I need help with my Project Report' or navigate tight deadlines, our 24/7 service commitment remains unwavering.",
       "This dedication has earned us a global reputation as the premier academic assistance provider, solidifying our position in the EdTech industry. Explore why this Project Report Writing section is indispensable on your journey to academic success with Assignment Gurus Project Report Writing.",
     ],
+    additionalContentTitle:"Project Report Writing Help Saudi Arabia",
+    additionalContent:['Elevate Your Academic and Professional Endeavors with Tailored Assistance. Our specialized services in Saudi Arabia offer comprehensive support for crafting impeccable project reports. With personalized guidance and expert assistance, we ensure precision and quality in your project reports, empowering you to excel in your academic and professional pursuits. Trust our dedicated team to deliver exceptional results that propel your success in Saudi Arabia and beyond.']
+
+
+
   },
   // exams
   {
@@ -139,10 +149,11 @@ export const options = [
     name: "Quiz Help",
     href: "quizzes-help",
     label: "quizzes help",
+    bannerTitle:"Quizzes Help Online",
     bannerDesc:
-      "Revolutionize your career with online homework \n help available today!",
+      "Revolutionize Your Career with Online Homework Help Featuring Comprehensive Quizzes Help for Enhanced Learning and Academic Success",
     aboutTitle:
-      "Quiz Mastery Unleashed: Elevate Your Learning with Assignment Gurus' Dynamic Quiz Support Services",
+      "Quiz Mastery Unleashed: Elevate Your Learning with Assignment Gurus' Dynamic Quiz Support Services for Optimal Academic Achievement and Success",
     aboutImage: quizzes,
     serviceAboutSectionPara: [
       "Welcome to Assignment Gurus Quizzes – your ultimate destination for top-quality Quiz assistance. Do academic pursuits always unfold as anticipated? More often than not, the answer is a resounding No. While planning your career path may seem secure, ensuring that your academic journey aligns with those aspirations poses a significant challenge.",
@@ -156,6 +167,9 @@ export const options = [
       "Assignment Gurus takes an active initiative to provide Quiz assistance, bringing you closer to achieving academic excellence. Our dedicated team of specialists ensures you're never left alone in challenging situations. Whether you declare 'I need help with my Quizzes' or navigate tight deadlines, our 24/7 service commitment remains unwavering.",
       "This dedication has earned us a global reputation as the premier academic assistance provider, solidifying our position in the EdTech industry. Discover the compelling reasons behind the indispensability of the Quizzes section for your academic success with Assignment Gurus Quizzes.",
     ],
+    additionalContentTitle:"Quizzes Help Saudi Arabia",
+    additionalContent:[` Elevate Your Academic Performance with Tailored Assistance. Our specialized services in Saudi Arabia offer comprehensive support for mastering quizzes and exams. With personalized guidance and expert assistance, we ensure precision and excellence in your academic endeavors, empowering you to succeed in Saudi Arabia's educational landscape. Trust our dedicated team to provide reliable and effective support that maximizes your learning outcomes and propels your academic success in Saudi Arabia.`]
+
   },
   // dissertations
   {

@@ -143,8 +143,24 @@ const Page = () => {
                   height={512}
                 />
               </div>
+             
             </div>
           </div>
+          <div className="flex flex-col items-center justify-center">
+  {currentServiceOption.additionalContentTitle ? (
+    <>
+      <h3 className={`font-bold text-4xl mt-10 mb-10 text-center`}>
+        {currentServiceOption.additionalContentTitle}
+      </h3>
+      <div className={`w-[65%] mb-10 leading-7 text-justify `}>
+        <p>{currentServiceOption.additionalContent}</p>
+      </div>
+    </>
+  ) : (
+    <></>
+  )}
+</div>
+
         </div>
       </div>
     </>
