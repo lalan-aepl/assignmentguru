@@ -37,7 +37,7 @@ const Step2Form = ({ data }) => {
       setLoading(true);
       // console.log(data.email, data.name, "email,name");
       const formData = {
-        device_number: `Device 13, Current Page URL: ${location.pathname}`,
+        device_number: `Device 22, Current Page URL: ${location.pathname}`,
         name: data.name,
         email: data.email,
         phone,
@@ -45,7 +45,7 @@ const Step2Form = ({ data }) => {
         pages,
         words,
         subject,
-        description: `Device Number: Device 13,\n Current Page URL: ${location.pathname},\n ${description}`, // Format description with new lines
+        description: `Device Number: Device 22,\n Current Page URL: ${location.pathname},\n ${description}`, // Format description with new lines
         fileValue,
       };
 
@@ -69,24 +69,27 @@ const Step2Form = ({ data }) => {
         const fieldNames = emptyFields
           .map((field) => field.field.toLowerCase())
           .join(", ");
-        // toast.warning(`Please fill the ${fieldNames}`, {
-        //   position: toast.POSITION.TOP_RIGHT,
-        // });
+        toast.warning(`Please fill the ${fieldNames}`, {
+          position: toast.POSITION.TOP_RIGHT,
+        });
+        setLoading(false);
         alert(`please fill the ${fieldNames}`);
         return;
       }
 
-      const sendData = await axios.post(
+      const sendData = axios.post(
         "https://devicewebserver.el.r.appspot.com/api/geniusTutor/saveFormData",
         formData
       );
-
-      if (sendData.data.success) {
-        // Reset form fields and show success message
-        // toast.success("Successfully submitted.", {
-        //   position: toast.POSITION.TOP_RIGHT,
-        // });
-        alert("submitted successfully");
+      toast.promise(sendData,{
+        pending:"Sending Message",
+        success:"Message Sent Successfully",
+        error:"Something went wrong"
+      },{
+        position: toast.POSITION.TOP_CENTER,
+      }).then(() => {
+        // Clear name and email fields after successful send
+        setLoading(false);
         setPhone("");
         setDeadline("");
         setPages(1);
@@ -94,21 +97,39 @@ const Step2Form = ({ data }) => {
         setSubject("");
         setDescription("");
         setFileValue(null);
-        // navigate("/success");
-      } else {
-        // toast.error("Server returned an error.", {
-        //   position: toast.POSITION.TOP_RIGHT,
-        // });
-        alert("something went wrong");
-      }
+      }).catch(error => {
+        // Handle error if necessary
+        setLoading(false);
+        console.error('Error sending message:', error);
+      });
+
+      // if (sendData.data.success) {
+      //   // Reset form fields and show success message
+      //   // toast.success("Successfully submitted.", {
+      //   //   position: toast.POSITION.TOP_RIGHT,
+      //   // });
+      //   alert("submitted successfully");
+      //   setPhone("");
+      //   setDeadline("");
+      //   setPages(1);
+      //   setWords(250);
+      //   setSubject("");
+      //   setDescription("");
+      //   setFileValue(null);
+      //   // navigate("/success");
+      // } else {
+      //   // toast.error("Server returned an error.", {
+      //   //   position: toast.POSITION.TOP_RIGHT,
+      //   // });
+      //   alert("something went wrong");
+      // }
     } catch (error) {
       console.error("Error submitting form:", error);
       // toast.error("An error occurred. Please try again later.", {
       //   position: toast.POSITION.TOP_RIGHT,
       // });
-      alert("something went wrong");
-    } finally {
       setLoading(false);
+      alert("something went wrong");
     }
   };
 

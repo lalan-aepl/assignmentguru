@@ -10,14 +10,14 @@ const Contact = () => {
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
 
-  const showToastMessage =async () => {
+  const showToastMessage =async (e) => {
     const data={
       device_number:"Device 22",
       name,
       email ,
       phone ,
       subject,
-      message
+      message:"Device Number 22 : "+message
     }
     if(!name || !email ||   !phone || !subject || !message){
       toast.warning("Please fill all required data.", {
@@ -25,24 +25,32 @@ const Contact = () => {
       });
       return;
     }
+    e.preventDefault();
+    e.target.disabled = true;
+    e.target.innerText = "Sending . . .";
     
-    const sendData = await axios.post("https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData",data)
-    console.log(sendData.data.success)
-    if(sendData.data.success){
-    toast.success("Message Sent Successfully", {
-      position: toast.POSITION.TOP_RIGHT,
+    const sendData = axios.post("https://dev6apis.el.r.appspot.com/api/deviceWeb/saveDeviceWebData",data)
+    toast.promise(sendData, {
+      pending: "Message is Sending",
+      success: "Message Sent Successfully",
+      error: "Something went wrong"
+    }, {
+      position: "top-center",
+    }).then(() => {
+      // Clear name and email fields after successful send
+      setName('')
+      setEmail('')
+      setPhone('')
+      setSubject('')
+      setMessage('')
+      e.target.disabled = false;
+      e.target.innerText = "Send Now";
+    }).catch(error => {
+      // Handle error if necessary
+      e.target.disabled = false;
+      e.target.innerText = "Send Now";
+      console.error('Error sending message:', error);
     });
-    setName('')
-    setEmail('')
-    setPhone('')
-    setSubject('')
-    setMessage('')
-    }
-  else{
-    toast.error("Somthing went wrong.", {
-      position: toast.POSITION.TOP_RIGHT,
-    });
-  }
   };
 
 

@@ -5,7 +5,7 @@ import "./Hero.css";
 import review from '../../assets/reviews.webp'
 import trustPilot from "../../assets/trustpilot.webp";
 import siteJabber from "../../assets/sidejabbar.webp";
-import image from "../../assets/why-we-need.webp";
+import image from "../../assets/why-we-need2.jpg";
 import { options } from "../../data/nav";
 import AssignmentForm from "../../common/assignment-form/AssignmentForm";
 const Page = () => {

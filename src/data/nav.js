@@ -167,8 +167,8 @@ export const options = [
       "Assignment Gurus takes an active initiative to provide Quiz assistance, bringing you closer to achieving academic excellence. Our dedicated team of specialists ensures you're never left alone in challenging situations. Whether you declare 'I need help with my Quizzes' or navigate tight deadlines, our 24/7 service commitment remains unwavering.",
       "This dedication has earned us a global reputation as the premier academic assistance provider, solidifying our position in the EdTech industry. Discover the compelling reasons behind the indispensability of the Quizzes section for your academic success with Assignment Gurus Quizzes.",
     ],
-    additionalContentTitle:"Quizzes Help Saudi Arabia",
-    additionalContent:[` Elevate Your Academic Performance with Tailored Assistance. Our specialized services in Saudi Arabia offer comprehensive support for mastering quizzes and exams. With personalized guidance and expert assistance, we ensure precision and excellence in your academic endeavors, empowering you to succeed in Saudi Arabia's educational landscape. Trust our dedicated team to provide reliable and effective support that maximizes your learning outcomes and propels your academic success in Saudi Arabia.`]
+    additionalContentTitle:"Exam Help Germany",
+    additionalContent:[`Excel in Your Exams with Expert Assistance: Discover Top-notch Exam Help Services in Germany. Our tailored support ensures academic success, guiding you through every challenge with precision and confidence.`]
 
   },
   // dissertations
